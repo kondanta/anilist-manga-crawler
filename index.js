@@ -22,6 +22,7 @@ query ($page: Int = 1, $perPage: Int = 1, $id: Int, $type: MediaType = MANGA) {
         large
         medium
       }
+      bannerImage
       title {
         romaji
         english

@@ -6,9 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+     "url": ""
+    },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "kondanta",
+  "license": "MIT",
   "dependencies": {
     "request": "^2.88.0",
     "requestretry": "^2.0.2"

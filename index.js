@@ -1,24 +1,6 @@
 const request = require('requestretry').defaults({json: true});
 const { graphql_endpoint } = require("./config.json");
 
-// let arr = [{"id": 3, "name": "Shokugeki no Soma Ettitoile - Raw", "genres": ["action", "shounen"]},
-// 	   {"id": 5, "name": "Shokugeki no Soma - Raw", "genres": ["action", "shounen"]},
-// 	  {"id": 7, "name": "Akagami", "genres": ["dram", "shoujo"]}]
-
-// let name = "Shokugeki no Soma";
-
-// String.prototype.fuzzy = function (s) {
-//     var hay = this.toLowerCase(), i = 0, n = -1, l;
-//     s = s.toLowerCase();
-//     for (; l = s[i++] ;) if (!~(n = hay.indexOf(l, n + 1))) return false;
-//     return true;
-// };
-
-
-// let out = arr.filter(n => n.name.fuzzy(name) );
-// console.log(out);
-
-
 /**
  * Query for GraphQL
  */

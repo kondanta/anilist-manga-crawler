@@ -1,5 +1,6 @@
 {
     "graphql_endpoint": "https://graphql.anilist.co/",
+    "lhscans": "https://lhscan.net/",
     "db_host": "",
     "db_pass": "",
     "db_user": ""

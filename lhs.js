@@ -3,7 +3,7 @@ const { lhscans } = require('./config.json');
 const cheerio = require('cheerio');
 
 async function getMangaTitles(){
-    let titles = [];
+    let mangas = [];
     let response = await request({
 	url: lhscans + 'manga-list.html?listType=allABC',
 	method: 'GET',
@@ -13,8 +13,13 @@ async function getMangaTitles(){
     });
     const $ = cheerio.load(response.body);
     $(response.body).find("span a").each((index, elem) => {
-	console.log($(elem).text());
+	mangas.push(
+	    {
+		name: $(elem).text(),
+		url: $(elem).attr("href")
+	    });
     });
+    return mangas;
 }
 
 getMangaTitles();

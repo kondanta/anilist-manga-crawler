@@ -22,4 +22,9 @@ async function getMangaTitles(){
     return mangas;
 }
 
-getMangaTitles();
+async function printer() {
+    let x = await getMangaTitles();
+    console.log(x);
+}
+
+printer();

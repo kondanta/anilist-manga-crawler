@@ -39,7 +39,8 @@ async function addChapter(){
 	    method: 'GET',
 	    maxAttempts: 1,
 	    retryDelay: 5000,
-	    retryStrategy: request.RetryStrategies.HTTPOrNetworkError
+	    retryStrategy: request.RetryStrategies
+		.HTTPOrNetworkError
 	});
 	const $ = cheerio.load(response.body);
 	$(response.body).find("#list-chapters p .titleLink a")
@@ -50,6 +51,8 @@ async function addChapter(){
 			chapterUrl:  $(elem).attr("href")
 		    }
 		);
+		// Checking the output if its correct
+		console.log($(elem).attr("title"));
 	    });
     });
     return mangas;

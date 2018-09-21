@@ -1,5 +1,5 @@
 const request = require('requestretry').defaults({json: true});
-const { graphql_endpoint } = require("./config.json");
+const { graphql_endpoint } = require("../config.json");
 
 /**
  * Query for GraphQL

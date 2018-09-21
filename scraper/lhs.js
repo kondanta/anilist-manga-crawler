@@ -1,5 +1,5 @@
 const request = require('requestretry').defaults({json: true});
-const { lhscans } = require('./config.json');
+const { lhscans } = require('../config.json');
 const cheerio = require('cheerio');
 
 async function asyncForEach(array, callback) {

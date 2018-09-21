@@ -1,0 +1,10 @@
+version: '3'
+services:
+  scraper:
+    container_name: cron-scraper
+    restart: always
+    build: ./scraper
+  crawler:
+    container_name: cron-crawler
+    restart: always
+    build: ./crawler
